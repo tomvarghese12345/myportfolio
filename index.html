@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tom's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="logo">Tom Varghese</h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <button id="toggleTheme">🌚</button>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="container hero-content">
+      <h2>Hello, I'm <span>Tom</span></h2>
+      <p>Aspiring Developer | Creative Thinker | Problem Solver</p>
+      <a href="resume.pdf" class="resume-btn" download>📄 Download My Resume</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I am a passionate Full Stack Developer with expertise in the MERN stack (MongoDB, Express.js, React.js, and Node.js). Holding a Master’s degree in Computer Applications (MCA), I specialize in building responsive, scalable, and user-friendly web applications. I enjoy solving complex problems through clean, efficient code and have a keen interest in staying updated with the latest trends in technology. Whether working on the front end or back end, I aim to create seamless digital experiences that deliver real value to users and businesses alike.
+!</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="project-grid">
+  <div class="project-card">
+    <h3>🌐 Portfolio Website</h3>
+    <p>A modern, responsive website to showcase personal skills, resume, and contact details.</p>
+  </div>
+  <div class="project-card">
+    <h3>📊 Data Dashboard</h3>
+    <p>Interactive dashboard with charts and KPIs built using HTML, CSS, and JavaScript.</p>
+  </div>
+  <div class="project-card">
+    <h3>📱 Mobile App UI</h3>
+    <p>Clean mobile UI design prototype using Figma and React Native for seamless UX.</p>
+  </div>
+  <div class="project-card">
+    <h3>🤖 AI Chatbot</h3>
+    <p>An AI-based chatbot trained to answer customer queries using Python and Dialogflow.</p>
+  </div>
+</div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+
+      <form action="https://formspree.io/f/your_form_id" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+
+      <p>You can also reach me via:</p>
+      <p>Email: tomv7560@gmail.com</p>
+      <p>LinkedIn: https://www.linkedin.com/in/tom-varghese-1a8351350</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Tom Varghese. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById("toggleTheme");
+    toggle.onclick = () => {
+      document.body.classList.toggle("dark");
+    };
+  </script>
+</body>
+</html>
